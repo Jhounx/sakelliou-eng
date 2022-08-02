@@ -83,7 +83,6 @@ export default function Home() {
                 <img
                   src="./gerenciamento-obras.svg"
                   alt=""
-                  srcset=""
                   className="w-12 h-12"
                 />
                 <h1 className="font-bold font-mono text-xl mt-3  text-amber-500">
@@ -102,7 +101,6 @@ export default function Home() {
             <img
               src="./construcao.png"
               alt=""
-              srcset=""
               className="h-28 w-28"
             />
           </div>
