@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,6 +17,8 @@ a {
 
 * {
   box-sizing: border-box;
+  @apply font-sans;
+  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +29,22 @@ a {
     color: white;
     background: black;
   }
+}
+
+
+#navbar a { 
+  @apply transition ease-in-out hover:text-gray-500 flex items-center w-full justify-center py-3;
+}
+
+.card { 
+  @apply bg-white shadow-lg  shadow-amber-500/50 border-2 border-amber-500 rounded-md hover:scale-125 transition ease-in-out;
+}
+
+.view-container { 
+  @apply w-full flex flex-col;
+  height: 90vh;
+}
+
+.input_contact {
+  @apply border px-3 py-2 rounded-sm border-orange-400 shadow shadow-orange-400/50;
 }
